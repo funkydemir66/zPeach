@@ -1,4 +1,6 @@
 ﻿import sys
+from random import choice
+
 from g_python.gextension import Extension
 from g_python.hmessage import Direction
 import threading
@@ -106,9 +108,13 @@ d1 = d2 = h1 = h2 = 1
 
 canka = [1,-1]
 
-spamkob = ('‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡')
+spamkob = ('¬¬¬¬¬¬¬BULL¬¬¬¬¬¬¬¬¬SHİT¬¬¬÷÷¬¬¬¬¬¬¬¬¬¬¬¬¬3RR0R_ßL4ST3R_¬¬¬¬¬¬¬¬¬¬¬¬¬¬=)¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬')
 
 spamkod = str(spamkob)
+
+renk = "i:3, i:2"
+
+renk2 = choice(renk)
 
 extension_info = {
     "title": "ERROR!",
@@ -131,7 +137,7 @@ def chat(j):
 
 def start(s):
     (idd, command) = s.packet.read('is')
-    global kod, user_id, so, yon, tcho, harekets, v1,harekets2, npcs, t_id, ft, d1 ,d2, scho, sahipnick, ss, v1 ,v2, u1, h1, dinle, dinle2, sp, to, harekets, tcho, iv, nmode, tmode, r_id1, r_id2, sw, spamword2, spamword, sn, partymod, spamkod,swo,hedef, spt, target
+    global kod, user_id, so, yon, tcho, harekets, v1,harekets2, npcs, t_id, ft, d1 ,d2, scho, sahipnick, ss, v1 ,v2, u1, h1, dinle, dinle2, sp, to, harekets, tcho, iv, nmode, tmode, r_id1, r_id2, sw, spamword2, spamword, sn, partymod, spamkod,swo,hedef, spt, target, renk, renk2
 
 
     def main():
@@ -155,10 +161,10 @@ def start(s):
                     ext.send_to_server('{out:FollowFriend}{i:' + str(kod) + '}')
                     sleep(0.5)
                 if sw:
-                    ext.send_to_server('{out:Shout}{s:"'+str(spamword2)+'"}{i:0}')
+                    ext.send_to_server('{out:Shout}{s:"'+str(spamword2)+'"}{i:3}')
                     sleep(0.4)
                 if sn:
-                    ext.send_to_server('{out:Shout}{s:"'+str(spamkod)+'"}{i:0}')
+                    ext.send_to_server('{out:Shout}{s:"'+str(spamkod)+'"}{i:3}')
                     sleep(0.4)
 
     def spt2():
@@ -422,6 +428,11 @@ def start(s):
         s.is_blocked = True
         ext.send_to_server('{out:SendMsg}{i:' + str(kod) + '}{s:"Sit Walk On"}')
         swo = False
+
+    if command == ":pu":
+        s.is_blocked = True
+        ext.send_to_server('{out:SendMsg}{i:' + str(kod) + '}{s:"I Going Puppet"}')
+        ext.send_to_server('{out:UpdateFigureData}{s:"M"}{s:"lg-280-73.hr-125-40.ha-1022-73.sh-295-64.fa-3276-82.ch-875-73-82.he-3297-82.hd-190-30"}')
 
 
 

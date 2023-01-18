@@ -1,0 +1,3 @@
+0	false	750+0	TOSERVER	{out:Quit}
+1	false	5+0	TOCLIENT	{in:CloseConnection}{b:false}{b:2}
+2	true	800+0	TOSERVER	{out:GetGuestRoom}{i:12212999}{i:0}{i:1}

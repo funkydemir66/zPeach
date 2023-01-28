@@ -1,6 +1,0 @@
-0	false	5+0	TOSERVER	{out:BanUserWithDuration}{i:4374039}{i:12212785}{s:"RWUAM_BAN_USER_PERM"}
-1	false	5+0	TOSERVER	{out:BanUserWithDuration}{i:2330832}{i:12212785}{s:"RWUAM_BAN_USER_PERM"}
-2	false	5+0	TOSERVER	{out:BanUserWithDuration}{i:5344022}{i:12212785}{s:"RWUAM_BAN_USER_PERM"}
-3	false	5+0	TOSERVER	{out:BanUserWithDuration}{i:319692}{i:12212785}{s:"RWUAM_BAN_USER_PERM"}
-4	false	5+0	TOSERVER	{out:BanUserWithDuration}{i:4825001}{i:12212785}{s:"RWUAM_BAN_USER_PERM"}
-5	false	5+0	TOSERVER	{out:BanUserWithDuration}{i:4398679}{i:12212785}{s:"RWUAM_BAN_USER_PERM"}
